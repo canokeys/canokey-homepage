@@ -1,4 +1,4 @@
-baseURL: http://something-fresh.org/
+baseURL: https://www.canokeys.org/
 languageCode: en-us
 title: CanoKeys
 theme: hugo-fresh
@@ -19,7 +19,7 @@ params:
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logos/logo.png
     link: /
   font:
     name: "Open Sans"
@@ -32,7 +32,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: https://doc.canokeys.org
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -44,127 +44,110 @@ params:
     # - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
-    url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
+  - title: Documentation
+    url: https://doc.canokeys.org
+  - title: Tools
     sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
-    button: true
+    - title: Web Console
+      url: https://console.canokeys.org
+    - title: Web DFU
+      url: https://dfu.canokeys.org
   section1:
     title: Great power comes
     subtitle: with great responsibility
     tiles:
-    - title: FIDO2
+    - title: Web Console
       icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
+      text: Manage your CanoKey using your browser
+      url: https://console.canokeys.org
+      buttonText: Console
+    - title: OTP Tool & Plugin
       icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
+      text: Use TOTP or HOTP using your browser or your phone
+      url: "#"
       buttonText: Get started
-    - title: Add-ons & plugins
+    - title: Open Source
       icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+      text: Audit the code and build your own key
+      url: https://github.com/canokeys
+      buttonText: GitHub
   section2:
     title: You're here because you want the best
     subtitle: And we know it
     features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    - title: FIDO2 / WebAuthn
+      text: 64 resident keys and unlimited normal keys <br>HMAC extension
       # Icon (from /images/illustrations/icons/___.svg)
       icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    - title: OpenPGP
+      text: OpenPGP Smart Card 3.4 Compatible <br>RSA 2048 / 4096 <br>NIST P256 / P384 <br>secp256k1 <br>ED25519 / X25519
       icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    - title: PIV
+      text: NIST SP 800-73-4 Compatible<br>RSA 2048 <br>NIST P256 / P384
       icon: mobile-feed
   section3:
     title: One platform
     subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
+    image: console.png
     buttonText: Get started
-    buttonLink: "#"
-  section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-    clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
-  section5: true
+    buttonLink: https://console.canokeys.org
+  section4: false
+    # title: Our Clients love us!
+    # subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    # clients:
+    # - name: Irma Walters
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: Accountant
+    #   img: 1
+    # - name: John Bradley
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: Financial Analyst
+    #   img: 2
+    # - name: Gary Blackman
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: HR Manager
+    #   img: 3
+  section5: false
   footer:
-    # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: logo-alt.png
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
-      # Icons are from Font Awesome
+    - link: https://github.com/canokeys
       icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/lucperkins
+    - link: https://twitter.com/canokeys
       icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
-    bulmalogo: true
-    quicklinks:
-      column1:
-        title: "Product"
-        links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
-      column2:
-        title: "Docs"
-        links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+    bulmalogo: false
+    # quicklinks:
+      # column1:
+      #   title: "Product"
+      #   links:
+      #   - text: Discover features
+      #     link: /
+      #   - text: Why choose our product?
+      #     link: /
+      #   - text: Compare features
+      #     link: /
+      #   - text: Our roadmap
+      #     link: /
+      #   - text: AGB
+      #     link: /agb
+      # column2:
+      #   title: "Docs"
+      #   links:
+      #   - text: Get started
+      #     link: /
+      #   - text: User guides
+      #     link: /
+      #   - text: Admin guide
+      #     link: /
+      #   - text: Developers
+      #     link: /
+      # column3:
+      #   title: "Blog"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second
