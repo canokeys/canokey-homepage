@@ -32,7 +32,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: https://doc.canokeys.org
+    buttonlink: https://docs.canokeys.org
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -45,7 +45,7 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Documentation
-    url: https://doc.canokeys.org
+    url: https://docs.canokeys.org
   - title: Tools
     sublinks:
     - title: Web Console
