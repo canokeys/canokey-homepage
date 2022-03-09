@@ -119,9 +119,9 @@ params:
     - link: https://twitter.com/canokeys
       icon: twitter
     bulmalogo: false
-    # quicklinks:
-      # column1:
-      #   title: "Product"
+    quicklinks:
+      column1:
+         title: "Jiekade (Shenzhen) Technology"
       #   links:
       #   - text: Discover features
       #     link: /
